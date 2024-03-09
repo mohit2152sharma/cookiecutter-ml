@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ml
+spec:
+  containers:
+  - name: ml
+    image: awsEcrRepoLink/{{ cookiecutter.repo_name }}:latest
+    ports:
+    - containerPort: 80

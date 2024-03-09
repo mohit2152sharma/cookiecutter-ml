@@ -1,0 +1,8 @@
+{
+  "repo_name": "ml", 
+  "project_name": "ml (Used in pyproject toml, default same as repo_name)",
+  "project_version": "0.0.1",
+  "project_description": "ML",
+  "project_author": "Mohit Sharma",
+  "python_version": "^3.11",
+}
