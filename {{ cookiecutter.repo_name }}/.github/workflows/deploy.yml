@@ -42,7 +42,7 @@ jobs:
           python-version: 3.11
       - name: Build Docker Image
         run: |
-          buildNumber=${{ github.run_number }}
+          buildNumber=${{ '{{ github.run_number }}' }}
           docker build -t ecrRepositoryUrl/{{ cookiecutter.repo_name }}:latest -t ecrRepositoryUrl/{{cookiecutter.repo_name }}:$buildNumber -f Dockerfile
       - name: Push Docker image to ecr
         run: |
